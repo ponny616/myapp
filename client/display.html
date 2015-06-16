@@ -1,0 +1,33 @@
+<template name="display">
+	
+{{#if currentUser}}
+
+<div>
+	<h1 id="Alpha-Echo">See comments here!</h1>
+</div>
+
+<h4><mark>Here are the most recent chats:</mark></h4>
+<table class="table table-striped">
+	<thead>
+		<tr class="success">
+			<th>Name</th><th>Time</th><th>message</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each chat}}
+		  {{> chatrow}}
+		 {{/each}}
+	</tbody>
+</table>
+
+{{else}}
+		<h2>You must be logged in to see the messages!</h2>
+{{/if}}
+
+</template>
+
+<template name="chatrow">
+	<tr>
+		<td>{{username}}</td> <td>{{time}}</td> <td>{{message}}</td>
+	</tr>
+</template>

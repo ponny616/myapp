@@ -1,0 +1,57 @@
+
+
+
+@font-face{ 
+  font-family: 'Amadeus';
+  src: url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.eot');
+  src: url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.eot?iefix') format('eot'),
+       url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.woff') format('woff'),
+       url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.ttf') format('truetype'),
+       url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.svg#Amadeus-webfont') format('svg');
+}
+
+@font-face{ 
+  font-family: 'Alpha-Echo';
+  src: url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.eot');
+  src: url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.eot?iefix') format('eot'),
+       url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.woff') format('woff'),
+       url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.ttf') format('truetype'),
+       url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.svg#Alpha-Echo-webfont') format('svg');
+}
+
+@font-face{ 
+  font-family: 'GrutchShaded';
+  src: url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.eot');
+  src: url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.eot?iefix') format('eot'),
+       url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.woff') format('woff'),
+       url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShadedo-webfont.ttf') format('truetype'),
+       url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.svg#GrutchShaded-webfont') format('svg');
+}
+
+
+#Amadeus{ 
+  font-family: 'Amadeus';
+  src: url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.eot');
+  src: url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.eot?iefix') format('eot'),
+       url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.woff') format('woff'),
+       url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.ttf') format('truetype'),
+       url('/Amadeus-fontfacekit/web fonts/amadeus_regular_macroman/Amadeus-webfont.svg#Amadeus-webfont') format('svg');
+}
+
+#Alpha-Echo{ 
+  font-family: 'Alpha-Echo';
+  src: url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.eot');
+  src: url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.eot?iefix') format('eot'),
+       url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.woff') format('woff'),
+       url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.ttf') format('truetype'),
+       url('/Alpha-Echo-fontfacekit/web fonts/alphaecho_regular_macroman/alpha_echo-webfont.svg#Alpha-Echo-webfont') format('svg');
+}
+
+#GrutchShaded{ 
+  font-family: 'GrutchShaded';
+  src: url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.eot');
+  src: url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.eot?iefix') format('eot'),
+       url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.woff') format('woff'),
+       url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShadedo-webfont.ttf') format('truetype'),
+       url('/GrutchShaded-fontfacekit/web fonts/grutchshaded_regular_macroman/GrutchShaded-webfont.svg#GrutchShaded-webfont') format('svg');
+}

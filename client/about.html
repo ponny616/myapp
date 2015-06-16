@@ -1,0 +1,30 @@
+<template name="about">
+
+<div class="bg-primary">
+	<h1>About Us!</h1>
+</div>
+
+I made this page!! {{theTime}}
+<hr/>
+
+Here is our team:
+<table class="table table-condensed">
+	<thead>
+		<tr><th>Name</th><th>Email</th></tr>
+	</thead>
+	<tbody>
+{{#each team}}
+  {{> teamrow}}
+{{/each}}
+	</tbody>
+</table>
+
+</template>
+
+
+<template name="teamrow">
+   <tr>
+   	  <td>{{name}}</td>
+   	  <td>{{email}}</td>
+   </tr>
+</template>
