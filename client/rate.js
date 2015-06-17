@@ -11,12 +11,12 @@
       if(playerId == selectedAnime){
         return "selected"
       }
-    },
-
-    'showSelectedAnime': function(){
-      var selectedAnime = Session.get('selectedAnime');
-      return Anime.findOne(selectedAnime)
     }
+
+    //'showSelectedAnime': function(){
+      //var selectedAnime = Session.get('selectedAnime');
+      //return Anime.findOne(selectedAnime)
+    //}
   });
 
   Template.rate.events({
@@ -24,17 +24,17 @@
       var playerId = this._id;
       Session.set('selectedAnime', playerId); 
     },
-    'click .increment': function () {
-      var selectedAnime = Session.get('selectedAnime');
-      Anime.update(selectedAnime, {$inc: {score: 5}});
-    },
-    'click .decrement': function(){
-      var selectedAnime = Session.get('selectedAnime');
-      Anime.update(selectedAnime, {$inc: {score: -5}});
-    },
     'click .remove': function(){
       var selectedAnime = Session.get('selectedAnime');
       Anime.remove(selectedAnime);
+    },
+    'click .scored': function(){
+      var selectedAnime = Session.get('selectedAnime');
+      Anime.update(selectedAnime, {$inc: {score: -10}});
+    },
+    'click .scorep': function(){
+      var selectedAnime = Session.get('selectedAnime');
+      Anime.update(selectedAnime, {$inc: {score: 10}});
     }
   });
   
