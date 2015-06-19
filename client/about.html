@@ -1,30 +1,23 @@
 <template name="about">
+		<style>
+	body {
+background: url('http://i2.pixiv.net/img28/profile/xxpocketxx/bg_20140618231828.png') repeat repeat;
+}
+	</style>
+<br>
+<br>
 
-<div class="bg-primary">
-	<h1>About Us!</h1>
+<div>
+	<h1 id="Alpha-Echo">About me</h1>
 </div>
 
-I made this page!! {{theTime}}
 <hr/>
 
-Here is our team:
-<table class="table table-condensed">
-	<thead>
-		<tr><th>Name</th><th>Email</th></tr>
-	</thead>
-	<tbody>
-{{#each team}}
-  {{> teamrow}}
-{{/each}}
-	</tbody>
-</table>
-
-</template>
-
-
-<template name="teamrow">
-   <tr>
-   	  <td>{{name}}</td>
-   	  <td>{{email}}</td>
-   </tr>
+<div class="container-fluid">
+	<div class="col-md-7 col-md-offset-2 bg-warning">
+	<h3 class="text-center">Author: Limin Wang</h3>
+	<p class="text-center"><strong>I am a big anime fan since I was a little girl! So I made this page/community for other fans like me. In this app, you can check the latest updates on the welcome page. You can also rate and add your favorite animes on the 'Ratings' page. On 'Chat' page, you can leave whatever messages or comments there for fanclub community and you can see your posts and messages others have left on 'Messages' page. In addition, the most attractive and unique feature about this app is that you can learn japanese on 'Learn Japanese' page. You can also check the confidence level of your pronunciation on that page. Besides, you can edit your user profile on 'Profiles' page. Last but not least, new features will be added: you can add your favorite animes into your 'favorite', you can use voice control to activate the video-links for those animes, and the user interface will be redesigned. Hope you will love and support it!</strong></p>
+	<img src="images/ye.png" width="100%" alt="shiji" class="img-circle">
+	</div>
+</div>
 </template>
