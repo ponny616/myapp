@@ -5,6 +5,10 @@ Meteor.publish("theChat",function(){return Chat.find();});
 Meteor.publish("theDisplay",function(){return Display.find();});
 Meteor.publish("theLearn",function(){return Learn.find();});
 Meteor.publish("theAnime",function(){return Anime.find();});
+Meteor.publish("theUpdates",function(){return Updates.find();});
+
+//Meteor.publish("theMessage",function(){return Message.find();});
+
 
 
 Meteor.publish("userData", function () {

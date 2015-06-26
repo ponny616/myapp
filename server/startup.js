@@ -16,9 +16,9 @@ Meteor.startup(function(){
 	}
 
 	if(Anime.find({}).count()==0){
-		Anime.insert({name: "JoJo's Bizarre Adv.", score: "100"});
-		Anime.insert({name: "Shokugeki no Soma", score: "100"});
-		Anime.insert({name: "Kekkai Sensen", score: "100"});
+		Anime.insert({name: "JoJo's Bizarre Adv.", score: 100, username: "Server"});
+		Anime.insert({name: "Shokugeki no Soma", score: 100, username: "Server"});
+		Anime.insert({name: "Kekkai Sensen", score: 100, username: "Server"});
 	}
 	
 });

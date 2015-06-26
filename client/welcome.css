@@ -1,22 +1,116 @@
 .bg {
-  position: fixed;
+ 
   width: 100%;
-  height: 300px; /*same height as jumbotron */
+  height: 0px; /*same height as jumbotron */
   top:0;
   left:0;
   z-index: -1;
 }
 
 .jumbotron {
-  height: 300px;
+  height: 0px;
   color: black;
   background:transparent;
 }
 
-.con {
-  background-color: white;
-  background-image: url("http://i2.pixiv.net/img28/profile/xxpocketxx/bg_20140618231828.png");
+
+#imageOne {
+  position: absolute;
+  left: 150px;
+  top: 500px;
 }
+
+#updating {
+  position: absolute;
+  color: #6CDAC5;
+  font-size: 15px;
+  font-weight: bold;
+  left: 150px;
+  top: 600px;
+}
+
+#imageTwo {
+  position: absolute;
+  left: 330px;
+  top: 500px;
+}
+
+
+#rating {
+  position: absolute;
+  color: #6CDAC5;
+  font-size: 15px;
+  font-weight: bold;
+  left: 360px;
+  top: 600px;
+}
+
+#imageThree {
+  position: absolute;
+  left: 510px;
+  top: 500px;
+}
+
+
+#chatting {
+  position: absolute;
+  color: #6CDAC5;
+  font-size: 15px;
+  font-weight: bold;
+  left: 510px;
+  top: 600px;
+}
+
+#imageFour {
+  position: absolute;
+  left: 690px;
+  top: 500px;
+}
+
+
+#displaying {
+  position: absolute;
+  color: #6CDAC5;
+  font-size: 15px;
+  font-weight: bold;
+  left: 670px;
+  top: 600px;
+}
+
+#imageFive {
+  position: absolute;
+  left: 870px;
+  top: 500px;
+}
+
+
+#learning {
+  position: absolute;
+  color: #6CDAC5;
+  font-size: 15px;
+  font-weight: bold;
+  left: 870px;
+  top: 600px;
+}
+
+#imageSix {
+  position: absolute;
+  left: 1050px;
+  top: 500px;
+}
+
+
+#abouting {
+  position: absolute;
+  color: #6CDAC5;
+  font-size: 15px;
+  font-weight: bold;
+  left: 1080px;
+  top: 600px;
+}
+
+
+
 
 
 

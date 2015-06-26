@@ -12,3 +12,5 @@ sacha:spin
 accounts-password
 jparker:gravatar
 ian:accounts-ui-bootstrap-3
+d3js:d3
+mrt:modernizr-meteor

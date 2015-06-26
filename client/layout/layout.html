@@ -1,7 +1,5 @@
 <template name="layout">
 
-
-
 	<body>
 		<div class="site-wrapper">
 			<div class="site-wrapper-inner">
@@ -23,18 +21,24 @@
        	<span class="icon-bar"></span>
      	</button>
      	<a class="navbar-brand" href="{{pathFor 'welcome'}}">
-     	Limin's JBS App 2015</a>
+     		<button class="btn btn-default">
+            	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+          	</button>
+     	</a>
    	</div>
 
    <!-- Collect the nav links, forms, and other content for toggling -->
    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      	<ul class="nav navbar-nav">
-<li><a href="{{pathFor 'rate'}}">Ratings</a></li>
-<li><a href="{{pathFor 'chat'}}">Chat</a></li>
-<li><a href="{{pathFor 'display'}}">Messages</a></li>
-<li><a href="{{pathFor 'learn'}}">Learn Japanese</a></li>
-<li><a href="{{pathFor 'people'}}">Profiles</a></li>
-<li><a href="{{pathFor 'about'}}">About</a></li>
+     		{{#if currentUser}}
+			<li><a href="{{pathFor 'people'}}">
+				<button class="btn btn-default">
+            	<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          	</button>
+			</a></li>
+			{{/if}}
+
+			<li><a href="{{pathFor 'game'}}">Something Cool</a></li>
 </ul>
    	<ul class="nav navbar-nav navbar-right">
            	{{> loginButtons}} <!-- here -->

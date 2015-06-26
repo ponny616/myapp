@@ -1,0 +1,55 @@
+<template name= "chat">
+		<style>
+	body {
+background: url("images/tuzimen.png") repeat repeat;
+}
+	</style>
+
+<body>
+{{#if currentUser}}
+
+<div>
+	<h1 id="Alpha-Echo">Let's Chat!</h1>
+</div>
+
+<blockquote>
+  <p>Let's share your ideas with others for the anime...</p>
+  <footer>Just leave your ideas and go to 'Results' to see any comments</footer>
+</blockquote>
+
+
+<h4><mark>Enter your message here:</mark></h4>
+	<form id="createmessage">
+			message: <input type="text" name="message"><br/>
+			<input type="submit">
+	</form>
+<br>
+<br>
+<h4><mark>Here are the most recent messages you sent:</mark></h4>
+
+<table class="table table-hover">
+	<thead>
+		<tr class="success">
+			<th>Name</th><th>Time</th><th>message</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each chatting}}
+			{{#if ismine}}
+		  		{{> chats}}
+		  	{{/if}}
+		{{/each}}
+	</tbody>
+</table>
+
+{{else}}
+		<h2>You must be logged in to chat!</h2>
+{{/if}}
+</body>
+</template>
+
+<template name="chats">
+	<tr>
+		<td>{{username}}</td> <td>{{time}}</td> <td>{{message}}</td>
+	</tr>
+</template>

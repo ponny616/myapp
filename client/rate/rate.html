@@ -1,0 +1,87 @@
+<template name="rate">
+	<style>
+	body {
+		background: url("images/aixin.png") repeat repeat;
+	}
+	</style>
+
+{{#if currentUser}}
+
+<div>
+	<h1 id="Alpha-Echo">Animes:</h1>
+</div>
+
+<br>
+  <h3>Let's rate the animes you like!</h3>
+  <h5>You can add the anime to the list, and remove it if you typed wrong for the name</h5>
+  <h5>You can either give or take from the points of the animes...</h5>
+<br>
+
+	<table class="table table-centered table-hover">
+		<thead>
+			<tr> 
+				<th>Name
+					<button id="nameUp" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+					</button>
+					<button id="nameDown" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+					</button>
+				</th>
+				<th>Score
+					<button id="scoreUp" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+					</button>
+					<button id="scoreDown" class="btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+					</button>
+				</th>
+				<th>Posted by</th>
+				<th>Rate it!</th>  
+			</tr>
+		</thead>
+
+		<tbody>
+			{{#each animes}}
+				<tr class="animes {{selectedClass}}"> 
+				<th>{{name}}</th>
+				<th>{{score}}</th>
+				<th>{{username}}</th>
+				<th>
+					<button class="scored btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+					</button>
+					<button class="scorep btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+					</button>
+				</th>
+				<td>
+					{{#if ismyrow}} 
+					<button class="remove btn btn-default btn-sm">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+					{{/if}}
+				</td>
+				
+				</tr>
+			{{/each}}
+			</tbody>
+	</table>
+
+		{{> addAnimeForm}}
+	
+{{else}}
+		<h2>You must be logged in to see and do the ratings!</h2>
+{{/if}}
+		
+
+</template>
+
+<template name="addAnimeForm">
+	{{#if currentUser}}
+		<form>
+			<input type="text" name="animeName">
+			<input type="submit" class="btn btn-info" value="Add Anime">
+		</form>
+	{{/if}}
+</template>
