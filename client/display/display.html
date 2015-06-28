@@ -8,22 +8,19 @@ background: url("images/pink.png") repeat repeat;
 {{#if currentUser}}
 
 <div>
-	<h1 id="Alpha-Echo">See comments here!</h1>
+	<h1 id="Alpha-Echo">See all comments here!</h1>
 </div>
 
 <br>
 <br>
 
-<h4><mark>Here are the most recent chats:</mark></h4>
+<h4><mark>Here are the most recent chats: (see your own posts on leave message page!)</mark></h4>
+
+
 <table class="table table-hover">
 	<thead>
 		<tr class="success">
-			<th>Name
-				<select id="filter">
-					<option value="all">all</option>
-					<option value="one">today</option>
-				</select>
-			</th><th>Time</th><th>message</th>
+			<th>Name</th><th>Time</th><th>message</th>
 		</tr>
 	</thead>
 	<tbody>
