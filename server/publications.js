@@ -6,6 +6,7 @@ Meteor.publish("theDisplay",function(){return Display.find();});
 Meteor.publish("theLearn",function(){return Learn.find();});
 Meteor.publish("theAnime",function(){return Anime.find();});
 Meteor.publish("theUpdates",function(){return Updates.find();});
+Meteor.publish("thePlayers",function(){return PlayerList.find();});
 
 //Meteor.publish("theMessage",function(){return Message.find();});
 

@@ -1,30 +1,47 @@
 <template name="game">
-<html>
+<html lang="en">
 <head>
-    <title>Voronoi Diagram with Force Directed Nodes and Delaunay Links</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <style type="text/css">
         circle {
-            stroke: #EFEDF5;
-            fill: #EFEDF5;
+            stroke: #e6f6f9;
+            fill: #e6f6f9;
             pointer-events: none;
         }
         line {
             pointer-events: none;
-            stroke: #EFEDF5;
+            stroke: #e6f6f9;
             stroke-width: 2px;
             opacity: .05;
         }
         path{
-            stroke: #EFEDF5;
+            stroke: #e6f6f9;
             stroke-width: 4px;
         }
     </style>
 </head>
 <body>
-<div id="chart">
+  <style>
+  body {
+  background: url("images/hehe.jpg") repeat repeat;
+  }
+  </style>
+  <center>
+  <h1 id="Alpha-Echo">Voronoi Diagram with Force Directed Nodes and Delaunay Links</h1>
+  <h6>Source from: http://christophermanning.org/</h6>
+  <div id="chart"></div>
+</center>
+<div class="bg-warning">
+<ul>
+  <h4>Controls</h4>
+  <li>Drag the cells to interact with the diagram.</li>
+  <li>Use the mousewheel to add/remove nodes.</li>
+  <li>Hold shift while using the mousewheel to change the initialization spiral.</li>
+  <li>Press the letter s to toggle the simulation.</li>
+</ul>
 </div>
+
 <script type="text/javascript">
     var w = window.innerWidth > 960 ? 960 : (window.innerWidth || 960),
         h = window.innerHeight > 500 ? 500 : (window.innerHeight || 500),
@@ -33,7 +50,7 @@
         simulate = true,
         zoomToAdd = true,
         // https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.js#L105
-        color = d3.scale.quantize().domain([10000, 7250]).range(["#dadaeb","#bcbddc","#9e9ac8","#807dba","#6a51a3","#54278f","#3f007d"])
+        color = d3.scale.quantize().domain([10000, 7250]).range(["#d4f1f5","#d5f0f5","#c0e9f1","#abe2ec","#96dbe7","#81d4e3","#6dccde"])
 
     var numVertices = (w*h) / 3000;
     var vertices = d3.range(numVertices).map(function(i) {

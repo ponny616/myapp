@@ -7,3 +7,4 @@ Meteor.subscribe("theDisplay");
 Meteor.subscribe("theLearn");
 Meteor.subscribe("theAnime");
 Meteor.subscribe("theUpdates");
+Meteor.subscribe("thePlayers");

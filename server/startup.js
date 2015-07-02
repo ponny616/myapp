@@ -20,5 +20,10 @@ Meteor.startup(function(){
 		Anime.insert({name: "Shokugeki no Soma", score: 100, username: "Server"});
 		Anime.insert({name: "Kekkai Sensen", score: 100, username: "Server"});
 	}
+
+	if(PlayerList.find({}).count()==0){
+		PlayerList.insert({name: "ponny", score: 2});
+		PlayerList.insert({name: "ray", score: 4});
+	}
 	
 });
