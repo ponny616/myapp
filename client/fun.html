@@ -1,0 +1,51 @@
+<template name="fun">
+<html lang="en">
+<style>
+body {
+background: url('http://kumaori.info/p2/130902icoino.gif') repeat repeat;
+}
+</style>
+  <center>
+  <div>
+      <h1 id="Alpha-Echo" class="ha">Have fun!</h1>
+    </div>
+  <h5 class="haha">Let's draw!</h5>
+  <meta charset="utf-8">
+  <style>
+    .line {
+      fill: none;
+      stroke: #50D8F8;
+      stroke-width: 3px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+  </style>
+  <svg width="960" height="500">
+    <rect style="fill:#fff;" width="100%" height="100%"></rect>
+  </svg>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script>
+    var activeLine;
+    var renderPath = d3.svg.line()
+        .x(function(d) { return d[0]; })
+        .y(function(d) { return d[1]; })
+        .interpolate("basis");
+    var svg = d3.select("svg")
+        .call(d3.behavior.drag()
+          .on("dragstart", dragstarted)
+          .on("drag", dragged)
+          .on("dragend", dragended));
+    function dragstarted() {
+      activeLine = svg.append("path").datum([]).attr("class", "line");
+    }
+    function dragged() {
+      activeLine.datum().push(d3.mouse(this));
+      activeLine.attr("d", renderPath);
+    }
+    function dragended() {
+      activeLine = null;
+    }
+  </script>
+</center>
+</html>
+</template>
