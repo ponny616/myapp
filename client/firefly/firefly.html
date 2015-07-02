@@ -4,6 +4,7 @@ body {
 background: url("images/tuzia.jpg") repeat repeat;
 }
 </style>
+{{#if currentUser}}
 	<center>
 		<div>
 			<h1 id="Alpha-Echo">Take a break!</h1>
@@ -52,5 +53,7 @@ background: url("images/tuzia.jpg") repeat repeat;
 				</div>
 			</div>
 		</div>
-	
+{{else}}
+		<h2>You must be logged in to see and do the ratings!</h2>
+{{/if}}
 </template>

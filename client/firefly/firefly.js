@@ -90,8 +90,8 @@ theModel = new FireflyModel();  // we just create the model!
 //theModel.addFirefly(f2);
 
 for(var i =0; i<50; i++){
-	var myvx = Math.random()*10-5;
-	var myvy = (Math.random()-0.5)*10;
+	var myvx = Math.random()*100;
+	var myvy = (Math.random()-0.5)*100;
 	//var c = (Math.random()<0.5)?"red":"black";
 	theModel.addFirefly(new Firefly(50,50,2,getRandomColor(),myvx,myvy))
 }
@@ -229,8 +229,8 @@ Template.firefly.events({
 		running=true;
 		theModel = new FireflyModel();
 		for(var i =0; i<50; i++){
-			var myvx = Math.random()*10-5;
-			var myvy = (Math.random()-0.5)*10;
+			var myvx = Math.random()*100;
+			var myvy = (Math.random()-0.5)*100;
 
 			theModel.addFirefly(new Firefly(50,50,2,getRandomColor(),myvx,myvy))
 		}
